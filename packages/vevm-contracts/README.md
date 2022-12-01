@@ -1,4 +1,4 @@
-# ZetaEVM contracts
+# VersaEVM contracts
 
 > ⚠️ The contracts **are not audited yet**, use at your own risk.
 
