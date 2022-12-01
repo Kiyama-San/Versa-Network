@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["./scripts", "./lib", "./test", "./typechain-types", "./**/*.json", "typechain-types"],
+  "exclude": ["artifacts", "cache"],
+  "files": ["./hardhat.config.ts"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@Versachain/addresses/*": ["../addresses/src/*"],
+      "@Versachain/addresses": ["../addresses/src/index.ts"],
+      "@Versachain/addresses-tools/*": ["../addresses-tools/src/*"],
+      "@Versachain/addresses-tools": ["../addresses-tools/src/index.ts"],
+      "@Versachain/interfaces/*": ["../interfaces/*"]
+    }
+  }
+}

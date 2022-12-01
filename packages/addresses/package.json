@@ -1,0 +1,30 @@
+{
+  "name": "@versachain/addresses",
+  "version": "0.0.8",
+  "license": "MIT",
+  "author": "versachain",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "./dist/versachain-addresses.umd.js",
+  "module": "./dist/versachain-addresses.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/versachain-addresses.mjs",
+      "require": "./dist/versachain-addresses.umd.js"
+    }
+  },
+  "scripts": {
+    "tsc:watch": "npx tsc --watch",
+    "prepublishOnly": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^3.1.0",
+    "vite-plugin-dts": "^1.4.1"
+  }
+}

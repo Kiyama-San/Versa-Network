@@ -1,0 +1,13 @@
+{
+  "name": "@versanetwork/interfaces",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "versanetwork",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "tsc:watch": "npx tsc --watch"
+  }
+}

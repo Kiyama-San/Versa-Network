@@ -1,0 +1,28 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      }
+    ],
+    "name": "InvalidCaller",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidDestinationChainId",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidVersaMessageCall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidVersaRevertCall",
+    "type": "error"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["./scripts", "./lib", "./test", "./tests", "./typechain", "./**/*.json", "typechain-types"],
+  "exclude": ["artifacts", "cache"],
+  "files": ["./hardhat.config.ts"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@vesanetwork/addresses": ["../addresses/src/index"],
+      "@vesanetwork/addresses/*": ["../addresses/src/*"],
+      "@vesanetwork/interfaces": ["../interfaces/src/index"]
+    }
+  }
+}
