@@ -63,8 +63,8 @@
     "uniswapV3Router": "",
     "usdc": "",
     "weth9": "",
-    "zetaSwap": "",
-    "zetaSwapBtcInbound": "",
+    "versaSwap": "",
+    "versaSwapBtcInbound": "",
     "versaToken": "",
     "versaTokenConsumerUniV2": ""
   },
@@ -75,7 +75,7 @@
     "dai": "",
     "immutableCreate2Factory": "",
     "multiChainSwap": "",
-    "multiChainSwapZetaConnector": "",
+    "multiChainSwapVersaConnector": "",
     "multiChainValue": "",
     "tss": "",
     "tssUpdater": "",
@@ -86,10 +86,10 @@
     "uniswapV3Router": "",
     "usdc": "",
     "weth9": "",
-    "zetaSwap": "",
-    "zetaSwapBtcInbound": "",
-    "zetaToken": "",
-    "zetaTokenConsumerUniV2": ""
+    "versaSwap": "",
+    "versaSwapBtcInbound": "",
+    "versaToken": "",
+    "versaTokenConsumerUniV2": ""
   },
   "klaytn-baobab": {
     "connector": "",
@@ -114,7 +114,7 @@
     "versaToken": "",
     "versaTokenConsumerUniV2": ""
   },
-  "athens": {
+  "theta": {
     "connector": "",
     "crossChainCounter": "",
     "crossChainNft": "",
