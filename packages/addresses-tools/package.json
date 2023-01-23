@@ -13,6 +13,6 @@
     "tsc:watch": "npx tsc --watch"
   },
   "devDependencies": {
-    "@vetachain/addresses": "workspace:^"
+    "@versachain/addresses": "workspace:^"
   }
 }
