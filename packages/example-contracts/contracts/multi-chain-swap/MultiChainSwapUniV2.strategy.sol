@@ -137,7 +137,7 @@ contract MultiChainSwapUniV2 is MultiChainSwap, VersaInteractor, MultiChainSwapE
             if (sourceInputToken == wETH) {
                 path = new address[](2);
                 path[0] = wETH;
-                path[1] = zetaToken;
+                path[1] = versaToken;
             } else {
                 path = new address[](3);
                 path[0] = sourceInputToken;
