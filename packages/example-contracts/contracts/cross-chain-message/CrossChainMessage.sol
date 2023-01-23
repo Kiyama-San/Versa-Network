@@ -38,7 +38,7 @@ contract CrossChainMessage is VersaInteractor, VersaReceiver, CrossChainMessageE
 
         uint256 crossChainGas = 18 * (10**18);
         uint256 versaValueAndGas = _versaConsumer.getVersaFromEth{value: msg.value}(address(this), crossChainGas);
-        _zetaToken.approve(address(connector), versaValueAndGas);
+        _versaToken.approve(address(connector), versaValueAndGas);
 
         connector.send(
             VersaInterfaces.SendInput({
@@ -58,7 +58,7 @@ contract CrossChainMessage is VersaInteractor, VersaReceiver, CrossChainMessageE
         isValidMessageCall(versaMessage)
     {
         /**
-         * @dev Decode should follow the signature of the message provided to zeta.send.
+         * @dev Decode should follow the signature of the message provided to versa.send.
          */
         (bytes32 messageType, string memory helloWorldMessage) = abi.decode(versaMessage.message, (bytes32, string));
 
