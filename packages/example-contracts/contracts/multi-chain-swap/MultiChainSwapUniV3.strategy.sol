@@ -3,12 +3,12 @@ pragma solidity 0.8.7;
 
 import "@openzeppelin/contracts/interfaces/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-import "@zetachain/protocol-contracts/contracts/ZetaTokenConsumerUniV3.strategy.sol";
+import "@versachain/protocol-contracts/contracts/versaTokenConsumerUniV3.strategy.sol";
 
 import "./MultiChainSwapErrors.sol";
 import "./MultiChainSwap.sol";
 
-contract MultiChainSwapUniV3 is MultiChainSwap, ZetaInteractor, MultiChainSwapErrors, ZetaTokenConsumerUniV3 {
+contract MultiChainSwapUniV3 is MultiChainSwap, versaInteractor, MultiChainSwapErrors, versaTokenConsumerUniV3 {
     using SafeERC20 for IERC20;
     bytes32 public constant CROSS_CHAIN_SWAP_MESSAGE = keccak256("CROSS_CHAIN_SWAP");
 
@@ -22,7 +22,7 @@ contract MultiChainSwapUniV3 is MultiChainSwap, ZetaInteractor, MultiChainSwapEr
         uint24 tokenPoolFee_
     )
         VersaTokenConsumerUniV3(versaToken_, uniswapV3Router_, quoter_, WETH9Address_, versaPoolFee_, tokenPoolFee_)
-        ZetaInteractor(versaConnector_)
+        VersaInteractor(versaConnector_)
     {}
 
     function swapETHForTokensCrossChain(
