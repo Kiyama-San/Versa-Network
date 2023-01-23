@@ -169,7 +169,7 @@ export const addNewAddress = (addressName: string, addressValue: string = "") =>
     const addressesByNetwork = JSON.parse(readFileSync(addressPath, "utf8"));
 
     Object.keys(addressesByNetwork).forEach(network => {
-      if (!isNetworkName(network) && !isZetaNetworkName(network)) return;
+      if (!isNetworkName(network) && !isVersaNetworkName(network)) return;
 
       addressesByNetwork[network][addressName] = addressValue;
       addressesByNetwork[network] = Object.keys(addressesByNetwork[network])
@@ -201,7 +201,7 @@ export const addNewNetwork = (newNetworkName: string, addTo: VersaNetworkName[])
       addressFilename.lastIndexOf(".")
     );
 
-    if (!isVersaNetworkName(versaNetworkName)) throw new Error("Error getting Zeta network name.");
+    if (!isVersaNetworkName(versaNetworkName)) throw new Error("Error getting Versa network name.");
 
     if (!addTo.includes(versaNetworkName)) return;
 
