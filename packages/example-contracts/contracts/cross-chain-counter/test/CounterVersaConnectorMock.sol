@@ -6,7 +6,7 @@ import "@versa/protocol-contracts/contracts/interfaces/VersaInterfaces.sol";
 import "../CrossChainCounter.sol";
 
 contract CounterversaConnectorMock is VersaConnector {
-    function callOnZetaMessage(
+    function callOnVersaMessage(
         bytes memory versaTxSenderAddress,
         uint256 sourceChainId,
         address destinationAddress,
@@ -25,7 +25,7 @@ contract CounterversaConnectorMock is VersaConnector {
             );
     }
 
-    function callOnZetaRevert(
+    function callOnVersaRevert(
         address versaTxSenderAddress,
         uint256 sourceChainId,
         uint256 destinationChainId,
